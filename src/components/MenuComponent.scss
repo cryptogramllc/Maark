@@ -1,0 +1,46 @@
+@keyframes startLoad {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+.menu_cont{
+  animation-name: startLoad;
+  animation-duration: 2s;
+  width: 100%;
+  max-width: 465px;
+  text-align: center;
+  margin: 300px auto;
+  position: relative;
+  ul{
+    list-style: none;
+    display: inline-block;
+    width:100%;
+    padding: 0px;
+
+    li{
+      text-align: center;
+        width: 33.3%;
+        float: left;
+        border-bottom: 1px solid #A7A7A7;
+        padding-bottom: 20px;
+
+      a{
+        text-decoration: none;
+        font-family: Arial;
+        color: #A7A7A7;
+        &.selected{
+          color: #4A90E2
+        }
+
+      }
+    }
+  }
+  .blue_bar {
+    height: 4px;
+    width: 33%;
+    background-color: #4A90E2;
+    position: absolute;
+    top: 52px;
+    -webkit-transition: left .5s;
+    transition: left .5s;
+  }
+}
